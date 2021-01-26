@@ -1,0 +1,30 @@
+body {
+  background-image: url(../imagens/estrada.jpg);
+  background-size: 1280px;
+  background-position-y: 300px;
+}
+
+#carro {
+  width: 150px;
+  margin-left: 10px;
+}
+
+#pessoa {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  margin-top: 15px;
+  margin-left: 150px;
+}
+
+.bloco {
+  background-color: aliceblue;
+  height: 100%;
+  width: 100%;
+  margin-left: 0px;
+}
+
+.bloco2 {
+  background-color: aliceblue;
+  margin-left: 0px;
+}

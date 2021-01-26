@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DevRace</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="col-md-12 bloco2">
+      <div class="container p-1">
+        <h1>DevRace</h1>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <br />
+      <img src="imagens/carro1.png" id="carro" />
+
+      <img src="imagens/man.png" id="pessoa" />
+    </div>
+
+    <div class="col-md-12 bloco">
+      <div class="container">
+        <br />
+        <h1>Utilize os botões para movimentar o carro na tela</h1>
+        <h3 id="mensagem"></h3>
+        <button
+          class="btn btn-primary"
+          id="tras"
+          onclick="movimenta(document.getElementById('carro'), 'tras')"
+        >
+          Pra trás
+        </button>
+        <button
+          class="d-none btn btn-primary"
+          id="baixo"
+          onclick="movimenta(document.getElementById('carro'), 'baixo')"
+        >
+          Pra baixo
+        </button>
+        <button
+          class="btn btn-primary"
+          id="direita"
+          onclick="movimenta(document.getElementById('carro'), 'direita')"
+        >
+          Pra frente
+        </button>
+        <button
+          class="d-none btn btn-primary"
+          id="cima"
+          onclick="movimenta(document.getElementById('carro'), 'cima')"
+        >
+          Para cima
+        </button>
+      </div>
+      <div">
+        <img id="respect" src="imagens/respect.png" style="visibility: hidden;"/>
+        <img id="gameOver" src="imagens/gameOver.jfif" style="visibility: hidden;"/>
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
